@@ -1,0 +1,328 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Login~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+header .header {
+    background-color: #fff;
+    height: 45px;
+}
+
+header a img {
+    width: 134px;
+    margin-top: 4px;
+}
+
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.login-page .form .login {
+    margin-top: -31px;
+    margin-bottom: 26px;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: all 0.3s ease; /* Corrected transition property */
+    cursor: pointer;
+}
+
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~homepage info~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+ .row1 {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-gap: 20px;
+ }
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~homepage films~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 30%;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.column:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+}
+
+.fakeimg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+/* Add hover effect */
+.img-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.topnav a {
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    background-color: black;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar-nav .active {
+    background-color: #17B169; /* Active background color */
+}
+
+.topnav a.right {
+    float: right;
+}
+.kop {
+    margin-top: 50px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~workersview~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~addworker~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+ }
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
+/* CSS for form */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+.notification {
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~seats~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.room-container {
+    display: flex;
+    justify-content: space-between; /* Align rooms left and right */
+    align-items: center;
+    margin-top: 50px;
+    position: relative; /* Make the container relative for positioning the TV */
+}
+
+.room {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px; /* Add some space between rooms */
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat.selected {
+    background-color: #f00;
+}
+
+.tv {
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -170px; /* Adjust this value to position the TV */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~film details~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Zorgt ervoor dat de elementen naast elkaar worden geplaatst */
+}
+
+/* CSS-styling voor de afbeelding */
+.film-image {
+    flex: 0 0 auto; /* De afbeelding wordt niet meegerekend in de flexbox-layout */
+    margin-right: 20px; /* Ruimte tussen de afbeelding en de tekst */
+}
+
+/* CSS-styling voor de film-details */
+.film-detail {
+    flex: 1; /* De tekst neemt de rest van de beschikbare ruimte in beslag */
+}
+
+/* Overige CSS-styling blijft hetzelfde zoals eerder getoond */
+.back-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Ruimte onder de knop */
+}
+.back-btn:hover {
+    background-color: #0056b3;
+}
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+.film-detail {
+    margin-bottom: 20px;
+}
+
+.film-image {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+
+
+
+.seat-label {
+    font-size: 20px; /* Adjust the font size as needed */
+}
